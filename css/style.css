@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 50px;
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: TextAnimation 8s infinite;
+    /* animation: TextAnimation 8s steps(20) infinite; */
+    border-right: 3px solid #222;
+}
+
+@keyframes TextAnimation{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 21ch;
+    }
+}
